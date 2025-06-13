@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import com.sports.sports_management.entity.Match;
 import com.sports.sports_management.repository.MatchRepository;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service

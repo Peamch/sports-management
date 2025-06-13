@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.sports.sports_management.entity.Tournament;
 import com.sports.sports_management.entity.Match;
-import com.sports.sports_management.entity.Team;
 import com.sports.sports_management.repository.TournamentRepository;
 import com.sports.sports_management.repository.MatchRepository;
 import com.sports.sports_management.repository.TeamRepository;
@@ -64,10 +63,6 @@ public class TournamentService {
 
     public List<Match> getMatchesByTournament(Long tournamentId) {
         return matchRepository.findByTournament_Id(tournamentId);
-    }
-
-    public List<Team> getTeamsByTournament(Long tournamentId) {
-        return teamRepository.findByTournamentId(tournamentId);
     }
 
     public List<Map<String, Object>> getSchedule(Long tournamentId) {

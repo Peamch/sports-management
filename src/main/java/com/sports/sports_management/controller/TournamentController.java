@@ -1,7 +1,6 @@
 package com.sports.sports_management.controller;
 
 import com.sports.sports_management.entity.Match;
-import com.sports.sports_management.entity.Team;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;

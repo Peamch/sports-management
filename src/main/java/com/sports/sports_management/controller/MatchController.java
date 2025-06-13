@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import com.sports.sports_management.entity.Match;
 import com.sports.sports_management.service.MatchService;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/matches")
 public class MatchController {

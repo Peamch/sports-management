@@ -6,7 +6,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import com.sports.sports_management.entity.Team;
 import com.sports.sports_management.entity.Match;
-import com.sports.sports_management.entity.Tournament;
 import com.sports.sports_management.service.TeamService;
 
 import java.util.List;
@@ -46,7 +45,7 @@ public class TeamController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteTeam(@PathVariable Long id) {
-        boolean deleted = teamService.deleteTeam(id); // Метод має повертати boolean
+        boolean deleted = teamService.deleteTeam(id);
         if (deleted) {
             return ResponseEntity.noContent().build();
         } else {

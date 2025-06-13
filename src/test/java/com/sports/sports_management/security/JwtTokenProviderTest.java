@@ -1,9 +1,7 @@
 package com.sports.sports_management.security;
 
-import io.jsonwebtoken.security.Keys;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -20,7 +18,6 @@ class JwtTokenProviderTest {
     @BeforeEach
     void setUp() {
         jwtTokenProvider = new JwtTokenProvider();
-        // Довгий секретний ключ (мін. 32 байти для HS512)
         jwtTokenProvider.jwtSecret = "myverysecureandlongjwtsecretkey123456";
         jwtTokenProvider.jwtExpirationInMs = 3600000;
     }

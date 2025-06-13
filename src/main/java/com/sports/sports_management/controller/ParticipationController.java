@@ -1,21 +1,15 @@
 package com.sports.sports_management.controller;
 
-import com.sports.sports_management.entity.Match;
 import com.sports.sports_management.entity.Participation;
 import com.sports.sports_management.entity.Team;
 import com.sports.sports_management.entity.Tournament;
 import com.sports.sports_management.service.ParticipationService;
-import com.sports.sports_management.repository.TournamentRepository;
-import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @RestController
 @RequestMapping("/participations")
